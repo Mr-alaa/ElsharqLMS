@@ -157,16 +157,15 @@ do_action('learn-press/before-single-course');
     else {
         ?>
         <div id="learn-press-course" class="course-summary learn-press">
-            ?>
-            <h4 style="color: black">You Can Generate Your Certificate,But Aim Higher!</h4>
+            <h4 class="text-black">You Can Generate Your Certificate,But Aim Higher!</h4>
             <a href="<?= site_url() ?>/learningpath/<?= $learningPath->post->post_name ?>"><?= $learningPath->post->post_title ?>
                 > </a>
             <a href="<?= site_url() ?>/learning_path_phases/<?= $phases->post->post_name ?>"><?= $phases->post->post_title ?>
             </a>
             <div>
-                <h1 style="color:#000;">Lessons in This Course(<?= $coursePost->post_title ?>)</h1>
+                <h1 class="text-black">Lessons in This Course(<?= $coursePost->post_title ?>)</h1>
             </div>
-            <div class="col-md-8 course-description" style="color: black">
+            <div class="col-md-8 course-description text-black">
                 <?= $coursePost->post_content ?>
             </div>
 
@@ -177,6 +176,7 @@ do_action('learn-press/before-single-course');
                  *
                  * @see learn_press_single_course_summary()
                  */
+
                 do_action('learn-press/single-course-summary');
                 ?>
 
