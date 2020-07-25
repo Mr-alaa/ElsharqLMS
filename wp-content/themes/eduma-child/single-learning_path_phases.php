@@ -12,10 +12,10 @@ $learningPath->the_post();
 ?>
 
 <div class="page-content full-width" style="color: black">
-    <h4 style="color: black">You Can Generate Your Certificate,But Aim Higher!</h4>
+    <h4 class="text-black">You Can Generate Your Certificate,But Aim Higher!</h4>
     <a href="<?= site_url() ?>/learning_path_phases/<?= $learningPath->post->post_name ?>"><?= $learningPath->post->post_title ?> > </a>
     <a href="<?= site_url() ?>/learning_path_phases/<?= $phase->post_name ?>"><?= $phase->post_title ?> </a>
-    <h2 style="color: black">Courses in this phase <?= $phase->post_title ?></h2>
+    <h2 class="text-black">Courses in this phase <?= $phase->post_title ?></h2>
     <div class="col-lg-8" style="padding-left: 0">
         <?=$phase->post_content?>
     </div>
